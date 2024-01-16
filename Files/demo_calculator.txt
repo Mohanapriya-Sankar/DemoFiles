@@ -1,0 +1,9 @@
+class demo implements calculator
+{
+public static void main(String a[])
+{
+Demo d=new Demo();
+d.add(10,20);
+d.sub(30,20);
+}
+}

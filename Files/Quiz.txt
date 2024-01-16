@@ -1,0 +1,20 @@
+import java.util.*;
+class Quiz
+{
+public static void main(String a[])
+{
+Scanner s=new Scanner(System.in);
+
+System.out.println("Collections Quiz" /n "Enter the answer from any four options to get next Question");
+
+System.out.println("1.Which interface doesnot allows Duplicates? /n A.List /n B.Set /n C.Map /n D.SortedMap);
+char c=s.nextChar();
+if (c.equals(A||B||C||D))
+{
+System.out.println("Answer");
+}
+}
+}
+
+
+

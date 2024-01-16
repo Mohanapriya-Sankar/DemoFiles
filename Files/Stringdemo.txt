@@ -1,0 +1,40 @@
+import java.util.*;
+class demo
+{
+public static void main(String a[])
+{
+int result;
+Scanner s=new Scanner (System.in);
+int n1=s.nextInt();
+int n2=s.nextInt();
+char op = s.nextChar();
+Switch (op)
+{
+case'+' :
+Result=n1+n2;
+System.out.println("Result is: " +Result);
+break;
+case '-':
+Result=n1-n2;
+System.out.println("Result is: " +Result);
+break;
+case '*':
+Result=n1*n2;
+System.out.println("Result is: " +Result);
+break;
+case '/':
+Result=n1/n2;
+System.out.println("Result is: " +Result);
+break;
+case '%':
+Result=n1%n2;
+System.out.println("Result is: " +Result);
+break;
+default :
+System.out.println("Arithmetic operator not found");
+}
+}
+}
+
+
+

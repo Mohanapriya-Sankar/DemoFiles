@@ -1,0 +1,30 @@
+@CrossOrigin(origins="http://localhost:4200")
+    @PostMapping("/paid")
+    @ResponseBody
+    public ResponseEntity<String> paid(@RequestBody String credentials) {
+        System.out.println(credentials);
+        rep.deleteById(credentials); 
+	     return ResponseEntity.ok().body("{\"message\": \"Deleted Successfully\"}");
+    }
+	
+	@CrossOrigin(origins="http://localhost:4200")
+    @PostMapping("/admin")
+    @ResponseBody
+    public ResponseEntity<Optional<Customer>> admin(@RequestBody String credentials) {
+        System.out.println("Work find");
+        System.out.println(credentials);
+        Optional<Customer> ad=adrepo.findById(credentials);
+        System.out.println("Work");
+        System.out.println(ad);
+	     return ResponseEntity.ok(ad);
+    }
+	@CrossOrigin(origins="http://localhost:4200")
+    @PostMapping("/update")
+    @ResponseBody
+    public ResponseEntity<Customer> update(@RequestBody Customer credentials) {
+		Customer ad=credentials;
+        adrepo.save(ad);
+        return ResponseEntity.ok(ad);
+        // ok().body("{\"message\": \"Authentication successful\"}");
+       
+  }

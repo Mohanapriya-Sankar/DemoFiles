@@ -1,0 +1,21 @@
+class Employee
+{
+int eid;
+String eName;
+public void setEid(int eid)
+{
+this.eid=eid;
+}
+public int getEid()
+{
+return eid;
+}
+public void setEname(String eNAme)
+{
+this.eName=eName;
+}
+public String getName()
+{
+return eName;
+}
+}

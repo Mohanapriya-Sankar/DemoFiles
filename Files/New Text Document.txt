@@ -1,0 +1,8 @@
+class emp
+{
+int id;
+void displayid(int id)
+{
+System.out.println("id in parent is:"+id);
+}
+}
